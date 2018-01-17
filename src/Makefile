@@ -1859,12 +1859,12 @@ $(RTLIBDIR)/hal_arm335xQEP$(MODULE_EXT): $(addprefix $(OBJDIR)/,$(hal_arm335xQEP
 endif
 endif
 
-ifdef TARGET_PLATFORM_LIME
-$(RTLIBDIR)/hal_gpio_lime$(MODULE_EXT): $(addprefix $(OBJDIR)/,$(hal_gpio_lime-objs))
-endif
-
 ifdef TARGET_PLATFORM_H3
 $(RTLIBDIR)/hal_gpio_h3$(MODULE_EXT): $(addprefix $(OBJDIR)/,$(hal_gpio_h3-objs))
+endif
+
+ifdef TARGET_PLATFORM_LIME
+$(RTLIBDIR)/hal_gpio_lime$(MODULE_EXT): $(addprefix $(OBJDIR)/,$(hal_gpio_lime-objs))
 endif
 
 ifdef TARGET_PLATFORM_CHIP
